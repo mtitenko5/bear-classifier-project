@@ -8,8 +8,8 @@ from sklearn.neighbors import NearestNeighbors
 import os
 
 DEVICE = "cpu"
-MODEL_PATH = "loaded/model_bear.tar"
-EMBEDDINGS_PATH = "loaded/embeddings_mini.npz"
+MODEL_PATH = "app/model_bear.tar"
+EMBEDDINGS_PATH = "app/embeddings_mini.npz"
 
 bears_name_russian = {
     "Ursus americanus": "Американский чёрный медведь",
@@ -120,5 +120,6 @@ info_text = f"""\
 for cls in class_names:
     ru_name = bears_name_russian.get(cls, cls)
     info_text += f"  - {ru_name}\n"
+
 
 st.sidebar.markdown(info_text)
