@@ -49,7 +49,6 @@ def load_model_and_embeddings():
 
 try:
     model, knn, embeddings, labels, image_paths, class_names = load_model_and_embeddings()
-    #st.sidebar.success(f" Загружено: {len(embeddings)} изображений")
 except Exception as e:
     st.sidebar.error(f" Ошибка: {e}")
     st.stop()
@@ -120,5 +119,6 @@ info_text = f"""\
 for cls in class_names:
     ru_name = bears_name_russian.get(cls, cls)
     info_text += f"  - {ru_name}\n"
+
 
 st.sidebar.markdown(info_text)
