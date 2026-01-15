@@ -1,0 +1,9 @@
+train:
+  epochs: 0
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.001
+
+data:
+  subset: 0.2
+  random_state: 42

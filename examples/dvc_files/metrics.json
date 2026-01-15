@@ -1,0 +1,6 @@
+{
+    "test_accuracy": 0.8316,
+    "train_accuracy_last_epoch": 0.8141,
+    "epochs": 1,
+    "batch_size": 32
+}

@@ -1,0 +1,21 @@
+stages:
+  train:
+    cmd: python bear_net.py
+    deps:
+      - bear_net.py
+      - params.yaml
+      - efficientnet_b0_rwightman-3dd342df.pth
+    params:
+      - train.batch_size
+      - train.epochs
+      - train.lr
+      - train.weight_decay
+      - data.subset
+      - data.random_state
+    outs:
+      - model_bear.tar
+      - embedding_model_bear_1.tar
+      - bear_embeddings_all.npz
+    metrics:
+      - metrics.json:  
+          cache: false
