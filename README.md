@@ -1,2 +1,20 @@
-# bear-classifier-project
-This project includes a website for classifying bears into 8 types and all codes
+#Классификатор медведей 
+
+##Описание проекта
+Проект приложения на Streamlit с данными сайта iNaturalist, которое 
+-определяет вид медведя по фото, 
+-находит 3 похожих изображения из датасета
+
+##Структура проекта
+-'app/'- ключевая папка для локального запуска приложения
+-'data/bear_dataset_mini/' - компактный вариант датасета для запуска 
+-'scripts/'- папка со всеми кодами, которые были созданы в процессе разработки
+-'data/observations.csv' - исходный csv-файл
+-'dvc_files/'- файлы для экспериментов во время обучения модели
+
+Для запуска приложения необходимо установить изображения из 'data/bear_dataset_mini/', а также папку 'app/'
+Перейдите в папку 'app/' in bash
+Do:   docker build -t bear_app.py
+      docker run -p 8501:8501 bear_app
+Open http://localhost:8501
+
