@@ -3,6 +3,6 @@ __pycache__
 .git
 .idea
 venv/
-bear_dataset/  
-bear_sorting_emb.py       
+bear_dataset/      
+
 *.log
